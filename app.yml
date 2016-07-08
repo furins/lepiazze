@@ -1,0 +1,14 @@
+id: it.indalo.lecupole
+name: Le Cupole
+appname: lecupole
+description: Applicazione per centri commerciali
+version: 1.0.0
+short_version_string: 100
+license: ISC
+codice_cc: 3
+author:
+    name: Dolomiti Project
+    email: sviluppo@dolomitiproject
+    # al momento il campo url richiede che ogni simbolo `/` venga sostituito con un `\/` per supportare la sintassi di `sed`
+    url: https://www.dolomitiproject.it
+    email: sviluppo@dolomitiproject.it
