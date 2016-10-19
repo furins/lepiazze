@@ -1,18 +1,107 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg height="480" id="svg3384"  preserveAspectRatio="none" version="1.1" width="320"
-     xmlns:svg="http://www.w3.org/2000/svg"
-    xmlns="http://www.w3.org/2000/svg">
-
-    <defs id="defs3390">
-        <filter id="filter4328" style="color-interpolation-filters:sRGB;">
-            <feFlood flood-color="rgb(0,0,0)" flood-opacity="0.1" id="feFlood4330" result="flood"/>
-            <feComposite id="feComposite4332" in2="SourceGraphic" in="flood" operator="in" result="composite1"/>
-            <feGaussianBlur id="feGaussianBlur4334" in="composite1" result="blur" stdDeviation="3"/>
-            <feOffset dx="0" dy="-20" id="feOffset4336" result="offset"/>
-            <feComposite id="feComposite4338" in2="offset" in="SourceGraphic" operator="over" result="composite2"/>
-        </filter>
-    </defs>
-
-    <path d="m 0,76 c 0,0 38.035369,11.232521 65,12 63.11799,-0.402123 114.63112,-63.782517 177,-63 49.91704,0.806958 78,31 78,31 l 0,424 -320,0 z" id="svg_1" style="fill:#feffcc;fill-opacity:0.95;filter:url(#filter4328)"/>
-    <path d="m 0,76 c 0,0 38.035369,11.232521 65,12 63.11799,-0.402123 114.63112,-63.782517 177,-63 49.91704,0.806958 78,31 78,31" id="path3397" style="fill:none;fill-opacity:0.8;stroke:#ff6600;stroke-width:8"/>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="480"
+   id="svg3384"
+   preserveAspectRatio="none"
+   version="1.1"
+   width="320"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="bg-home.svg">
+  <metadata
+     id="metadata14">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1765"
+     inkscape:window-height="893"
+     id="namedview12"
+     showgrid="false"
+     inkscape:zoom="1.434668"
+     inkscape:cx="160"
+     inkscape:cy="351.52406"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg3384" />
+  <defs
+     id="defs3390">
+    <filter
+       id="filter4328"
+       style="color-interpolation-filters:sRGB;">
+      <feFlood
+         flood-color="rgb(0,0,0)"
+         flood-opacity="0.1"
+         id="feFlood4330"
+         result="flood" />
+      <feComposite
+         id="feComposite4332"
+         in2="SourceGraphic"
+         in="flood"
+         operator="in"
+         result="composite1" />
+      <feGaussianBlur
+         id="feGaussianBlur4334"
+         in="composite1"
+         result="blur"
+         stdDeviation="3" />
+      <feOffset
+         dx="0"
+         dy="-20"
+         id="feOffset4336"
+         result="offset" />
+      <feComposite
+         id="feComposite4338"
+         in2="offset"
+         in="SourceGraphic"
+         operator="over"
+         result="composite2" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter4142"
+       x="-0.021797077"
+       width="1.0435942"
+       y="-0.01532957"
+       height="1.0306591">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.9062769"
+         id="feGaussianBlur4144" />
+    </filter>
+  </defs>
+  <path
+     d="m 0.69702539,56.483289 c 0,0 10.45432661,-60.498383 62.21189861,-31.215574 C 114.6665,54.550524 202.77962,60.46123 257.33455,27.091077 311.88949,-6.2790761 320,53.908924 320,53.908924 L 320,480 0,480 Z"
+     id="svg_1"
+     style="fill:#e1ecc8;fill-opacity:1;filter:url(#filter4142)"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="czzcccc" />
+  <path
+     d="m -1.3940508,62.059492 c 0,0 12.9424238,-68.7925129 65.6970248,-36.094752 52.754596,32.697761 127.624686,37.606593 188.849436,2.520387 61.22475,-35.0862054 67.54462,31.697025 67.54462,31.697025"
+     id="path3397"
+     style="fill:none;fill-opacity:0.8;stroke:#75b31f;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="czzc" />
 </svg>

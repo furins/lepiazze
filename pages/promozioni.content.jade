@@ -1,0 +1,23 @@
+.scrollable
+    .ui.divided.list.no-margin-top
+        .item.volantini(ng-if="!!volantini.length" ui-sref="volantiniList" ng-click="")
+            .content
+                .header Sfoglia i volantini!
+            .compact.ui.icon.button
+                i.chevron.right.icon
+        .item(ng-if="!promozioni.length")
+            .content
+                .header Nessuna promozione al momento
+        .item(ng-repeat="promozione in ::promozioni|orderBy: 'negozio.nome' " ui-sref="promozioneDetail({id:{{::promozione.id}}})" ng-click="" ng-class="::({totem:promozione.cat_promo=='Solo per totem',card:promozione.solo_per_possessori_card})")
+            .ui.image
+                img(data-src="http://www.shoppingcenterconnect.it{{::promozione.immagineThumb}}" src="img/loader-mini.gif" ng-if="::promozione.immagineThumb" width="100px")
+                img(data-src="http://www.shoppingcenterconnect.it{{::promozione.negozio.fotoThumb}}" src="img/loader-mini.gif" ng-if="::(!promozione.immagineThumb && promozione.negozio.fotoThumb)" width="100px")
+            .content
+                .header 
+                    i(class="ui star icon" ng-if="::promozione.negozio.preferito")
+                    | {{::promozione.negozio.nome}}
+                    i(class="ui star icon" ng-if="::promozione.negozio.preferito")
+                .small {{::promozione.data_completa}}
+                .description {{::promozione.nome}}
+            .compact.ui.icon.button
+                i.chevron.right.icon

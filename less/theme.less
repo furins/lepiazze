@@ -1,15 +1,20 @@
 // questo file contiene le variabili e i mixin che determinano lo stile dell'app
 body.home.pushable>.pusher {
-    background: url(../img/bg.jpg) 100% 0 no-repeat #fff;
-    background-size: cover;
+    background: url(../img/bg.png) 50% 40% no-repeat #f4f8eb;
+    background-size: initial;
 }
+
+body.pushable > .pusher {
+    background: url(../img/pattern.png) 50% 40% no-repeat #f4f8eb;
+}
+
 .bottoni_sotto {
     color: #000;
 }
 body.home .ui.menu.fixed .button.toggle_sidebar {
-    background-color: #f60;
+    background-color: #75b31f;
     box-shadow: 0 2px 9px rgba(0,0,0,0.5);
-    border-radius: 35px;
+    border-radius: 5px;
     width: 40px;
     height: 39px;
     line-height: 19px;
@@ -17,5 +22,16 @@ body.home .ui.menu.fixed .button.toggle_sidebar {
 }
 
 .ui.divided.grid:not([class*="vertically divided"])>.column:not(.row) {
-    box-shadow: -1px 0 0 0 rgba(244,60,0,.2);
+    box-shadow: -1px 0 0 0 rgba(117, 179, 31,.2);
+}
+
+.item.totem, .item.card {
+    background: #f4f8eb url("../img/club.png") no-repeat 97% center;
+    background-position: -webkit-calc(100% - 20px) center; /* Sf 6 */
+    background-position: right 20px center; /* Cr 25+, FF 13+, IE 9+, Op 10.5+ */
+}
+
+.highlight.club-color {
+    background-color: #75b31f !important;
+    color: black!important;
 }

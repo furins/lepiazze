@@ -1,0 +1,13 @@
+.ui.equal.width.center.aligned.padded.grid
+    .row.bordered.buttons
+        .eight.wide.column
+            .ui.button.fluid.pinterrato(ng-click="aggiorna_mappa(-1);") Piano terra
+        .eight.wide.column
+            .ui.button.fluid.yellow.pesterno(ng-click="aggiorna_mappa(0);") Primo Piano
+#schede.ui.segment.fullscreen(style="background-color: transparent")
+    .mappa
+        div
+            img(src="img/parcheggi_sopra@2x.png" class="mappa-zoomabile cliccabile" width="320px")
+            img(src="img/icons/location.png" class="punto-mappa")
+
+    

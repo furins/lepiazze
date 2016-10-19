@@ -1,0 +1,67 @@
+doctype html
+
+html#ng-app(ng-app="app" ng-controller="appController")
+    head
+        title Centro Commerciale
+        meta(charset="utf-8")
+        meta(name="format-detection" content="telephone=no")
+        meta(name="viewport" content="user-scalable=no, initial-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi")
+        meta(name="msapplication-tap-highlight" content="no")
+        link(rel="stylesheet" type="text/css" href="css/index.css")
+    body(class="not-loaded first-run {{data.page}}")
+        .ui.vertical.inverted.sidebar.menu
+            a.item.toggle_sidebar(ui-sref="home")
+                i.icon-home.sidebar-icon
+                |Pagina iniziale
+            a.item.toggle_sidebar.highlight.evidenziato(ui-sref="emergenze")
+                i.icon-aiuto.sidebar-icon
+                |Emergenze
+            // queste linee vanno tolte se il centro non ha un club/card
+            // purtroppo se imposto un ng-if perde il collegamento con la funzione toggle_sidebar
+            a.item.toggle_sidebar.highlight.club-color(ui-sref="club")
+                i.icon.diamond.sidebar-icon
+                |Club Le Piazze
+            // fine sezione club
+            a.item.toggle_sidebar(ui-sref="negozi")
+                i.icon-negozi.sidebar-icon
+                |Negozi
+            a.item.toggle_sidebar(ui-sref="food")
+                i.icon-food.sidebar-icon
+                |Food
+            a.item.toggle_sidebar(ui-sref="eventi")
+                i.icon-eventi.sidebar-icon
+                |Eventi
+            a.item.toggle_sidebar(ui-sref="promozioni")
+                i.icon-eventi.sidebar-icon
+                |Promozioni
+            a.item.toggle_sidebar(ui-sref="serviziAuto")
+                i.icon-servizi.sidebar-icon
+                |Servizi
+            a.item.toggle_sidebar(ui-sref="parcheggi")
+                i.icon-parcheggi.sidebar-icon
+                |Dove ho parcheggiato?
+            a.item.toggle_sidebar(ui-sref="listaSpesa")
+                i.icon-lista-spesa.sidebar-icon
+                |Lista della spesa
+            a.item.toggle_sidebar(ui-sref="sulweb")
+                i.icon-web.sidebar-icon
+                |Sul Web
+
+        .pusher
+            .caricamento.ui.page.inverted.dimmer
+                .ui.text.loader caricamento in corso ...
+            #navbar.ui.fixed.main.menu
+                a(ng-click="$back();" ng-show="data.show_back==true").ui.icon.back.button
+                    i.chevron.left.icon
+                .ui.icon.back.button.toggle_sidebar(ng-show="(data.show_back==false) && (data.page!='home')")
+                    i.icon.bars
+                .menu.title.text-center(ng-if="!negozio.logo") {{titolo}}
+                .menu.title.text-center.logo(ng-if="negozio.logo")
+                    img(ng-src="http://www.shoppingcenterconnect.it{{negozio.logo}}" alt="{{negozio.nome}}").logo
+                .ui.icon.back.button.toggle_sidebar(ng-show="(data.show_back==false) && (data.page=='home')")
+                    i.icon.bars
+            div(id="home_logo" ng-if="data.page=='home'")
+            div(ui-view="viewContent").pagina
+        script(type="text/javascript" src="cordova.js")
+        script(type="text/javascript" src="js/app.js")
+        script(type="text/javascript" src="http://192.168.10.105:8081/target/target-script-min.js#anonymous")

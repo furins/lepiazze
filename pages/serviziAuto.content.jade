@@ -1,0 +1,9 @@
+.scrollable
+    .ui.divided.list.no-margin-top
+        .item(ng-repeat="servizio in servizi['I servizi del centro']" ng-click="apriservizio(servizio);")
+            .ui.image(width="40px")
+                img(ng-src="{{servizio.img ? servizio.img : '_'}}" onerror="this.style.opacity=0;")
+            .content 
+                .header {{::servizio.nome}}
+            .compact.ui.icon.button(ng-if="servizio.sref")
+                i.chevron.right.icon

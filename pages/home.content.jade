@@ -1,0 +1,15 @@
+img(src="img/logo.png" height="60px" ng-if="mostra_logo").logo
+div.bottoni_sotto
+    .ui.divided.grid
+        .eight.wide.column(ui-sref="orari" ng-click="")
+            .text-center
+                i.icon-su
+            div.text-center Orario: <b>{{orario}}</b>
+                .small {{::orario_messaggio}}
+        .eight.wide.column(ui-sref="posizione" ng-click="")
+            .text-center
+                i.icon-su
+            div.text-center
+                span(ng-if="distanza") {{distanza}}
+                span(ng-if="!distanza.length") {{::raggiungerci_titolo}}
+                .small(ng-if="!distanza.length") {{::raggiungerci_sottotitolo}}

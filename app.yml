@@ -1,11 +1,11 @@
-id: it.indalo.lecupole
-name: Le Cupole
-appname: lecupole
+id: it.indalo.lepiazze
+name: Le Piazze
+appname: lepiazze
 description: Applicazione per centri commerciali
 version: 1.0.0
 short_version_string: 100
 license: ISC
-codice_cc: 3
+codice_cc: 7
 author:
     name: Dolomiti Project
     email: sviluppo@dolomitiproject

@@ -1,0 +1,55 @@
+.scrollable
+    .ui.segment.iscrizione(ng-show="!iscritto")
+        .ui.grid
+            .eleven.wide.column
+                h4.header LE PIAZZE CARD
+            .five.wide.column
+                img(src="img/club.png" style="width:100%; max-width: 95px; float: right;")
+        p Se sei del CLUB  richiedi la card direttamente anche sul tuo device! La potrai utilizzare con le stesse modalità della Card cartacea in tuo possesso.
+        |È completamente gratis e ti permette di ottenere tantissime promozioni e vantaggi riservati solo a te.
+        |Inserisci il numero della tua CARD con il Pin personale che hai ricevuto al momento dell’iscrizione al CLUB*
+
+
+        form.ui.form
+            .ui.error.message
+            .field
+                .label(for=numero) Card numero*
+                input(placeholder="numero card*" ng-model="iscrizione.numero" type="text" name="numero")
+            .field
+                .label(for=cognome) Pin personale*
+                input(placeholder="PIN*" ng-model="iscrizione.pin" type="text" name="pin")
+            .field(style="overflow:hidden")
+                button.ui.right.floated.primary.button(ng-click="iscriviti();") Collega le card!
+        br
+        img(src="img/banner_club.png").centrata
+            
+
+    .ui.segment.iscrizione(ng-show="iscritto")
+        .ui.grid
+            .eleven.wide.column
+                h4.header Ecco la tua card virtuale!
+            .five.wide.column
+                img(src="img/club.png" style="width:100%; max-width: 95px; float: right;")
+
+        .ui.stackable.two.column.grid
+            .card
+                img(src="img/card_fronte.png")
+                p {{proprietario}} <br> Card num. {{iscritto}}
+                a(ng-click="annullaIscrizione();").button.full-width annulla iscrizione
+            //- .column
+            //-     #qrcode
+            //- .column
+            //-     p {{proprietario}} - Card num. {{iscritto}}
+            //-     a(ui-sref="promozioniClubInterne").ui.fluid.primary.button scopri le promozioni riservate a te!
+            //-     br
+            //-     a(ng-click="annullaIscrizione();").ui.fluid.small.red.button annulla iscrizione
+                
+                
+.ui.modal
+    .header Si è certi di voler cancellare la card?
+    .content 
+        p Una volta cancellata, sarà possibile recuperare la card re-inserendo i propri dati.
+    .actions
+        .small.ui.black.deny.button Torna indietro
+        .small.ui.positive.red.button Cancella card
+        
