@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="it.indalo.lecupole" version="1.0.0">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="it.indalo.lepiazze" version="1.0.0">
 
-    <name>Le Cupole</name>
+    <name>Le Piazze</name>
 
     <description>
         Applicazione per centri commerciali
@@ -19,9 +19,7 @@
         permission on your app, which PhoneGap requires.
     -->
     <preference name="permissions" value="none"/>
-
     <preference name="BackupWebStorage" value="local"/>
-
     <!-- Customize your app and platform with the preference element. -->
     <preference name="orientation" value="default"/>
     <!-- all: default means both landscape and portrait are enabled -->
@@ -49,11 +47,9 @@
     <!-- blackberry: prevents a mouse-icon/cursor from being displayed on the app -->
     <preference name="android-installLocation" value="auto"/>
     <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
-    <!--
-        Define a specific version of PhoneGap to build into your app.
-        <preference name="phonegap-version"       value="3.5.0" />
-    -->
 
+    <!--preference name="phonegap-version" value="6.3.0" /-->
+    <preference name="windows-identity-name" value="PhonegapBuild.PGBDeveloper" />
     <!-- Plugins -->
 
     <!-- Core plugins -->
@@ -101,7 +97,7 @@
         <splash src="res/screen/android/screen-hdpi-portrait.png" qualifier="port-hdpi"/>
         <splash src="res/screen/android/screen-xhdpi-portrait.png" qualifier="port-xhdpi"/>
 
-        <preference name="fullscreen" value="true" />
+        <preference name="fullscreen" value="false" />
     </platform>
 
     <platform name="ios">
@@ -210,7 +206,7 @@
     </platform>
 
     <preference name="android-build-tool" value="gradle" />
-    <plugin name="phonegap-plugin-push" source="npm">
+    <plugin name="phonegap-plugin-push" source="npm" spec="1.8.1">
         <param name="SENDER_ID" value="" />
     </plugin>
 
