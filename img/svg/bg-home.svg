@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< HEAD
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -105,22 +104,4 @@
      style="fill:none;fill-opacity:0.8;stroke:#75b31f;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="czzc" />
-=======
-<svg height="480" id="svg3384"  preserveAspectRatio="none" version="1.1" width="320"
-     xmlns:svg="http://www.w3.org/2000/svg"
-    xmlns="http://www.w3.org/2000/svg">
-
-    <defs id="defs3390">
-        <filter id="filter4328" style="color-interpolation-filters:sRGB;">
-            <feFlood flood-color="rgb(0,0,0)" flood-opacity="0.1" id="feFlood4330" result="flood"/>
-            <feComposite id="feComposite4332" in2="SourceGraphic" in="flood" operator="in" result="composite1"/>
-            <feGaussianBlur id="feGaussianBlur4334" in="composite1" result="blur" stdDeviation="3"/>
-            <feOffset dx="0" dy="-20" id="feOffset4336" result="offset"/>
-            <feComposite id="feComposite4338" in2="offset" in="SourceGraphic" operator="over" result="composite2"/>
-        </filter>
-    </defs>
-
-    <path d="m 0,76 c 0,0 38.035369,11.232521 65,12 63.11799,-0.402123 114.63112,-63.782517 177,-63 49.91704,0.806958 78,31 78,31 l 0,424 -320,0 z" id="svg_1" style="fill:#feffcc;fill-opacity:0.95;filter:url(#filter4328)"/>
-    <path d="m 0,76 c 0,0 38.035369,11.232521 65,12 63.11799,-0.402123 114.63112,-63.782517 177,-63 49.91704,0.806958 78,31 78,31" id="path3397" style="fill:none;fill-opacity:0.8;stroke:#ff6600;stroke-width:8"/>
->>>>>>> b54e24041d6d321192e8631cd894cba9fceb049d
 </svg>

@@ -5,10 +5,11 @@ var shopping_center_id = 7;
 // TODO usate da pulse api, da rimuovere
 var applicationId = "yT21dy2n69cXnwb3clEDaBBeaHSBaed6N4JTwxU5";
 var clientKey = "GufaaI5ttmTqHNgqkf3zv8y39htDojN6RsRE4Ipj";
-var channel = 'lecupole';
+var channel = 'lepiazze';
 
 // TODO da inserire nelle api invece che qui
 var scc_customizations = {
+    nome: 'Le Piazze',
     show_logo_in_home: false,
     orario_default: '9:00-20:00',
     orario_messaggio: 'Alcuni negozi aprono prima! premi per dettagli',
@@ -111,8 +112,256 @@ var scc_customizations = {
 
 // TODO da inserire nelle api invece che qui
 var posizioniNegozi = {
-    '0': {
-        left: -100,
-        top: -100
+    "1": {
+        left: 94,
+        top: 189
+    },
+    "2": {
+        left: 42,
+        top: 124
+    },
+    "3": {
+        left: 121,
+        top: 144
+    },
+    "4": {
+        left: 132,
+        top: 132
+    },
+    "5": {
+        left: 140,
+        top: 125
+    },
+    "6": {
+        left: 146,
+        top: 119
+    },
+    "7": {
+        left: 155,
+        top: 109
+    },
+    "8": {
+        left: 173,
+        top: 99
+    },
+    "9": {
+        left: 187,
+        top: 95
+    },
+    "10": {
+        left: 198,
+        top: 99
+    },
+    "11": {
+        left: 189,
+        top: 107
+    },
+    "12": {
+        left: 199,
+        top: 112
+    },
+    "13": {
+        left: 188,
+        top: 54
+    },
+    "14": {
+        left: 255,
+        top: 34
+    },
+    "15": {
+        left: 214,
+        top: 99
+    },
+    "16": {
+        left: 234,
+        top: 99
+    },
+    "17": {
+        left: 245,
+        top: 99
+    },
+    "18": {
+        left: 258,
+        top: 101
+    },
+    "19": {
+        left: 214,
+        top: 113
+    },
+    "20": {
+        left: 225,
+        top: 112
+    },
+    "21": {
+        left: 235,
+        top: 112
+    },
+    "22": {
+        left: 291,
+        top: 95
+    },
+    "23": {
+        left: 305,
+        top: 103
+    },
+    "24": {
+        left: 314,
+        top: 114
+    },
+    "25": {
+        left: 321,
+        top: 122
+    },
+    "26": {
+        left: 329,
+        top: 128
+    },
+    "27": {
+        left: 336,
+        top: 135
+    },
+    "28": {
+        left: 350,
+        top: 156
+    },
+    "29": {
+        left: 373,
+        top: 176
+    },
+    "30": {
+        left: 389,
+        top: 190
+    },
+    "31": {
+        left: 141,
+        top: 170
+    },
+    "32": {
+        left: 146,
+        top: 163
+    },
+    "33": {
+        left: 153,
+        top: 156
+    },
+    "34": {
+        left: 163,
+        top: 147
+    },
+    "35": {
+        left: 191,
+        top: 144
+    },
+    "36": {
+        left: 200,
+        top: 144
+    },
+    "37": {
+        left: 210,
+        top: 144
+    },
+    "38": {
+        left: 221,
+        top: 145
+    },
+    "39": {
+        left: 237,
+        top: 145
+    },
+    "40": {
+        left: 275,
+        top: 149
+    },
+    "41": {
+        left: 296,
+        top: 148
+    },
+    "42": {
+        left: 306,
+        top: 147
+    },
+    "43": {
+        left: 313,
+        top: 156
+    },
+    "44": {
+        left: 322,
+        top: 167
+    },
+    "45": {
+        left: 330,
+        top: 175
+    },
+    "46": {
+        left: 339,
+        top: 183
+    },
+    "47": {
+        left: 347,
+        top: 190
+    },
+    "48": {
+        left: 356,
+        top: 198
+    },
+    "49": {
+        left: 362,
+        top: 206
+    },
+    "50": {
+        left: 370,
+        top: 212
+    },
+    "51": {
+        left: 160,
+        top: 169
+    },
+    "52": {
+        left: 171,
+        top: 159
+    },
+    "53": {
+        left: 185,
+        top: 159
+    },
+    "54": {
+        left: 200,
+        top: 154
+    },
+    "55": {
+        left: 209,
+        top: 155
+    },
+    "56": {
+        left: 234,
+        top: 153
+    },
+    "57": {
+        left: 258,
+        top: 164
+    },
+    "58": {
+        left: 273,
+        top: 164
+    },
+    "59": {
+        left: 286,
+        top: 163
+    },
+    "60": {
+        left: 305,
+        top: 164
+    },
+    "61": {
+        left: 320,
+        top: 181
+    },
+    "62": {
+        left: 329,
+        top: 189
+    },
+    "63": {
+        left: 337,
+        top: 198
     },
 };
